@@ -4,7 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Algorithms myAlgos = new Algorithms();
+
+            int someNmber = 7;
+            myAlgos.OddEven(someNmber);
+
+            Random myRandome = new Random();
+            int randm = myRandome.Next();
+            myAlgos.OddEven(randm);
+
+
+            Console.WriteLine("Please enter a random number");
+            int number = int.Parse(Console.ReadLine());
+            myAlgos.OddEven(number);
+
+
         }
     }
 }
